@@ -1,0 +1,35 @@
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+.comments-title {
+  font-size: 1.125rem;
+}
+
+.comment-body .pull-left {
+  padding-right: 0.625rem;
+}
+
+.comment-list {
+  padding-left: 0;
+
+  .comment {
+    display: block;
+  }
+
+  .pingback {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0.563rem 0;
+    a {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+
+

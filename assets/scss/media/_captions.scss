@@ -1,0 +1,26 @@
+.wp-caption {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  -webkit-border-radius:0.25rem;
+  -moz-border-radius:0.25rem;
+  border-radius:0.25rem;
+  height: auto;
+  max-width: 100%;
+  padding: 0.25rem;
+
+  img[class*="wp-image-"] {
+    @include center-block;
+  }
+
+  .wp-caption-text {
+    margin: 0.8075em 0;
+  }
+}
+
+.wp-caption-text {
+  color: #686868;
+  @include font-size(13);
+  text-align: center;
+}
+
+

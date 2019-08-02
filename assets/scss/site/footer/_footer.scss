@@ -1,0 +1,71 @@
+#colophon {
+  background: linear-gradient(to left, #18bc9c, #2c3e50);
+  color: $color_text_footer;
+
+  a {
+    @include hover-focus {
+      color: #2C3E50;
+    }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+
+  .footer-menu-right,
+  .footer-menu,
+  .footer-menu-left {
+    padding-left: 0;
+    display: flex;
+  }
+
+  .footer-menu-right,
+  .footer-menu {
+    ul {
+      flex-flow: row wrap;
+      margin-bottom: 0;
+    }
+  }
+
+  .site-info {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: space-between;
+
+    .footer-menu-left {
+      padding: 1rem;
+      padding-left: 0;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .site-info {
+      flex-flow: column;
+      flex: 1 1 90%;
+    }
+    .footer-menu-left,
+    .footer-menu,
+    .footer-menu-right {
+      justify-content: center;
+    }
+
+    .footer-menu-right {
+      order: 1;
+    }
+
+    .footer-menu-left {
+      order: 2;
+    }
+  }
+}
+
+
+
+
+

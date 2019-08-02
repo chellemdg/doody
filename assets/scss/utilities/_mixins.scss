@@ -1,0 +1,94 @@
+//FONT-SIZE RETURN REM
+@mixin font-size($size) {
+  font-size: $size * 1px;
+  font-size: calculaterem($size);
+}
+
+//  FONT-SIZE RETURN PX
+@mixin font-sizerem($rem) {
+  font-size: $rem * 1rem;
+  font-size: calculatepx($rem);
+}
+
+@mixin text($family: $font-family-base,$weight: $font-weight-base,$size: $font-size-base,$t-align: left) {
+  font-family: $family;
+  @include font-size($size);
+  font-weight: $weight;
+  text-align: $t-align;
+  @content;
+}
+
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src:url($file-name + '.ttf')  format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+//bg-image
+@mixin bg-image() {
+  align-items: center;
+  background-attachment:fixed !important;
+  background-position:center !important;
+  background-repeat: no-repeat !important;
+  background-size:cover !important;
+  -webkit-background-size:cover !important;
+  display: flex;
+  display:-webkit-flex;
+}
+
+// pagination and post navigation
+@mixin post-navigation($py:0.313rem){
+  border: 1px solid #ddd;
+  -webkit-border-radius:0.98rem;
+  -moz-border-radius:0.98rem;
+  border-radius:0.98rem;
+  display: inline-block;
+  padding: $py 0.875rem;
+  background:white;
+}
+
+@mixin backgrund-hover{
+    background: #2C3E50;
+    color: white;
+    border:1px solid #2C3E50;
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+  clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+  width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+//padding
+@mixin padding-y($top,$bottom){
+  padding-bottom: $bottom;
+  padding-top: $top;
+}
+
+//margin
+@mixin margin-y($top,$bottom) {
+  margin-bottom: $bottom;
+  margin-top: $top;
+}

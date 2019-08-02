@@ -1,0 +1,59 @@
+.widget {
+  @include font-sizerem(0.875);
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+
+  a{
+    @include hover-focus{color:#2C3E50;}
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li.recentcomments {
+      display: block;
+      padding: 5px 15px;
+    }
+
+    li {
+      a {
+        //display: block;
+        padding: .5rem 1rem;
+      }
+    }
+  }
+
+  img{
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.6);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.6);
+    box-shadow: 0 0 8px rgba(0,0,0,.6);
+  }
+
+  // gallery
+  .gallery-item {
+    padding: 5px;
+  }
+
+  // calendar table
+  #wp-calendar {
+    caption{
+      caption-side: top !important;
+      padding-top: 0;
+    }
+    tbody tr td {
+      padding: .5rem;
+    }
+    tfoot{
+      text-align: center;
+    }
+  }
+}
+
+.half-rule {
+  margin: 2.5rem 0;
+  width: 6rem;
+}
+

@@ -1,0 +1,31 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.module-border-wrap {
+  -moz-border-image: -moz-linear-gradient(to bottom left, #19b094 0%, #2c3e50 100%);
+  -webkit-border-image: -webkit-linear-gradient(to bottom left, #19b094 0%, #2c3e50 100%);
+  border-image: linear-gradient(to bottom left, #19b094 0%, #2c3e50 100%) 1;
+}
+
+
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "header/site-header";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "footer/footer";

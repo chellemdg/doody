@@ -1,0 +1,12 @@
+.post-password-form input[type="password"] {
+margin-top: 0.4375em;
+}
+
+.search-from{
+  display: flex;
+  flex-flow:row wrap;
+
+  .search-div{
+    flex: 1 1 auto;
+  }
+}

@@ -1,0 +1,27 @@
+.custom-header,
+.featured-header-image {
+  *{
+    color: $color_text_header;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@include font-face('Lobster Two','assets/fonts/LobsterTwo-Regular')
+@include font-face('Oswald','assets/fonts/Oswald[wght]',300)
+@include font-face('Pontano Sans','assets/fonts/PontanoSans-Regular')
+
+body{
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Lobster Two',cursive;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#masthead,#colophon{
+    font-family: 'Lobster Two', cursive;
+}
