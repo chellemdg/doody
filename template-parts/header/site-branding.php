@@ -16,16 +16,12 @@
                 <?php
                 if (get_theme_mod('header_banner_title_setting')) {
                     echo get_theme_mod('header_banner_title_setting');
-                } else {
-                    echo 'Doody';
                 }
                 ?>
             </h1>
             <?php
             if ( get_theme_mod( 'header_banner_description_setting' ) ) {
 	            echo get_theme_mod( 'header_banner_description_setting' );
-            } else {
-                echo esc_html__('My first theme maked with WordPress', 'doody');
             }
             ?>
         </div><!-- .site-branding -->

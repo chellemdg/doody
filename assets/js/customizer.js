@@ -32,4 +32,20 @@
 			}
 		} );
 	} );
+
+	//link_textcolor
+	wp.customize( 'link_textcolor', function( value ) {
+		value.bind( function( to ) {
+			if ( 'blank' === to ) {
+				$( 'a:not(.site-title)' ).css( {
+					'color': '18BC9C',
+				} );
+			} else {
+				$( 'a:not(.site-title)' ).css( {
+					'color': to,
+				} );
+			}
+		} );
+	} );
+
 } )( jQuery );
