@@ -63,9 +63,9 @@ function doody_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( //Instantiate the color control class
 		$wp_customize, //Pass the $wp_customize object (required)
-		'mytheme_link_textcolor', //Set a unique ID for the control
+		'doody_link_textcolor', //Set a unique ID for the control
 		array(
-			'label'    => __( 'Link Color', 'mytheme' ),
+			'label'    => __( 'Link Color', 'doody' ),
 			'settings' => 'link_textcolor',
 			'priority' => 10,
 			'section'  => 'colors',

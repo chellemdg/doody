@@ -3,7 +3,7 @@ Contributors: chellemdg
 Requires at least: WordPress 5.0
 Tested up to: WordPress 5.1-trunk
 Requires PHP: 7.2.12
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, custom-logo, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, threaded-comments, left-sidebar, right-sidebar
